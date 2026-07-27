@@ -3,10 +3,14 @@
 Crie um programa que receba o nome, peso e altura do usuário e informe na tela o seu IMC o seu diagnóstico com base no valor do IMC.
 """
 
+# importação de biblioteca
+import os
+
 nome = input("Informe seu nome: ").title()
 peso = float(input("Informe seu peso: ").replace(",","."))
 altura = float(input("Informe sua altura em metros: ").replace(",","."))
 
+os.system("cls" if os.name == "nt" else "clear")
 
 print(f"Seu nome é: {nome}")
 print(f"Seu peso é: {peso}")
