@@ -90,8 +90,3 @@ while True:
 
         case _:
             print("Opção inválida. Tente novamente.")
-
-
-
-if (idade > 20):
-    print("teste")
