@@ -26,10 +26,10 @@ def main():
 
         match opcao:
             case "1":
-                x = int(input("Informe o valor x: "))
-                y = int(input("Informe o valor de y: "))
+                base = int(input("Informe o valor da base: "))
+                expoente = int(input("Informe o valor do expoente: "))
                 limpar()
-                print(f"O valor da potência é : {calcular_potencia(x, y)}")
+                print(f"O valor da potência é : {calcular_potencia(base, expoente)}")
 
                 continue
 
@@ -41,19 +41,19 @@ def main():
                 continue
 
             case "3":
-                x = int(input("Informe o valor x: "))
-                y = int(input("Informe o valor de y: "))
-                z = int(input("Informe o valor de z: "))
+                comprimento = int(input("Informe o valor do comprimento: "))
+                largura = int(input("Informe o valor da largura: "))
+                altura = int(input("Informe o valor da altura: "))
                 limpar()
-                print(f"O valor do volume paralelepípidico é : {calcular_volume_paralelepípidico(x, y, z)} ")
+                print(f"O valor do volume paralelepípidico é : {calcular_volume_paralelepípidico(comprimento, largura, altura)} ")
 
                 continue
 
             case "4":
-                x = int(input("Informe o valor x: "))
-                y = int(input("Informe o valor de y: "))
+                raio = int(input("Informe o valor de raio: "))
+                altura = int(input("Informe o valor de altura: "))
                 limpar()
-                print(f"O valor do volume cilindrico é : {calcular_volume_cilindrico(x, y)}")
+                print(f"O valor do volume cilindrico é : {calcular_volume_cilindrico(raio, altura)}")
 
                 continue
 
@@ -62,4 +62,7 @@ def main():
                 break
             case _:
                 print("Opção inválida.")
-                continue    
+                continue
+
+if __name__ == "__main__":
+    main()
